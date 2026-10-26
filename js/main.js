@@ -523,8 +523,8 @@
 
       about: () => {
         return `
-          <div class="term-tag">// Shashwat Misra — 2nd Year B.Tech Undergrad</div>
-          <p>Undergraduate engineering student passionate about practical software development, IoT systems, and problem solving. Actively building projects with Python, C++, HTML/CSS, JavaScript, and MongoDB. Open to 2027 internships.</p>
+          <div class="term-tag">// Shashwat Misra — 2nd Year B.Tech Undergrad • Cisco Certified</div>
+          <p>Undergraduate engineering student with Cisco Certified credentials in computer networks. Passionate about practical software development, IoT systems, and problem solving. Actively building projects with Python, C++, HTML/CSS, JavaScript, and MongoDB. Open to 2027 internships.</p>
           <p class="term-dim">Contact: shashwatmisra11@gmail.com • Phone: +91 9794119772</p>
         `;
       },
@@ -534,6 +534,7 @@
           <div class="term-tag">// Current Skills & Technologies:</div>
           <div><span class="term-cmd-highlight">Languages:</span> Python, C++, C, JavaScript (ES6+), HTML5, CSS3</div>
           <div><span class="term-cmd-highlight">Database:</span> MongoDB (NoSQL collections & CRUD)</div>
+          <div><span class="term-cmd-highlight">Certifications:</span> Cisco Certified (Networking, Routing & Protocols)</div>
           <div><span class="term-cmd-highlight">Tools & Ops:</span> Git, GitHub, Deployment (Vercel, Netlify, Render), Linux</div>
         `;
       },
