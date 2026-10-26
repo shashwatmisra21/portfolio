@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Shashwat Misra - 2nd Year B.Tech Undergrad, Problem Solver, and Developer. Skilled in Python, C++, JavaScript, HTML/CSS, MongoDB, and Git.">
+  <meta name="theme-color" content="#0a0b10">
+  <title>Shashwat Misra | B.Tech Undergrad • Problem Solver • Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Moving Gradient Blobs -->
+  <div class="ambient-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Custom Cursor (Desktop Only) -->
+  <div class="custom-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Shashwat</span>
+        <span class="brand-dot">.</span>
+        <span class="brand-code">dev</span>
+        <span class="brand-bracket"> /&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#terminal" class="nav-link">Terminal</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Journey</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Switch between light and dark theme">
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-bar bar-1"></span>
+          <span class="hamburger-bar bar-2"></span>
+          <span class="hamburger-bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#terminal" class="mobile-nav-link">Terminal</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Journey</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <span class="status-indicator-dot"></span> 2nd Year B.Tech • Open to 2027 Internships
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <!-- Particle Network Canvas -->
+      <canvas id="hero-particles" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-content-wrapper container">
+        <div class="hero-badge reveal">
+          <span class="badge-pulse-dot"></span>
+          <span>2nd Year B.Tech Undergrad • Open to 2027 Internships</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          Hi, I'm Shashwat Misra <br>
+          <span class="hero-gradient-text">Building Real-World Software & IoT</span>
+        </h1>
+
+        <!-- Typing & Deleting Dynamic Subtitle -->
+        <div class="typewriter-container reveal" aria-label="Role: B.Tech Undergrad, Problem Solver, Python & Web Builder">
+          <span class="typewriter-prefix">I am a </span>
+          <span class="typewriter-dynamic" id="typewriter">B.Tech Undergrad</span>
+          <span class="typewriter-cursor" aria-hidden="true"></span>
+        </div>
+
+        <p class="hero-description reveal">
+          Passionate 2nd-year engineering student building practical hackathon platforms, IoT mini projects, and web applications with Python, C++, JavaScript, and MongoDB. Focused on solid fundamentals and hands-on problem solving.
+        </p>
+
+        <div class="hero-cta-group reveal">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Projects</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#terminal" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+            <span>Open Terminal</span>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+
+        <!-- Hero Tech Badges -->
+        <div class="hero-quick-tags reveal">
+          <span class="tag-item">Python</span>
+          <span class="tag-item">C / C++</span>
+          <span class="tag-item">JavaScript</span>
+          <span class="tag-item">HTML & CSS</span>
+          <span class="tag-item">MongoDB</span>
+          <span class="tag-item">Git & GitHub</span>
+          <span class="tag-item">Deployment</span>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down to About section">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">// 01. Profile & Background</span>
+          <h2 class="section-title">2nd-Year Undergrad with Passion for Building</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative reveal">
+            <p class="lead-text">
+              I'm an undergraduate student in my 2nd year of B.Tech, dedicated to mastering core computer science concepts and applying them to practical, real-world projects.
+            </p>
+            <p>
+              Rather than just studying theory, I love rolling up my sleeves to build things: from hackathon prototypes like <strong>ScamShield India</strong> and <strong>Campus Lost & Found</strong>, to hardware-interfaced IoT systems like the <strong>Smart Gas Leakage Detector</strong>, and automated Python applications like my <strong>Personal Finance Tracker</strong>.
+            </p>
+            <p>
+              I believe in clean fundamentals, continuous learning, and writing code that solves real problems. I am actively looking for internship opportunities, project collaborations, and mentorship to grow as a software engineer.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-chip">
+                <span class="chip-icon">🎓</span>
+                <span class="chip-label">2nd Year B.Tech Undergrad</span>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-icon">🚨</span>
+                <span class="chip-label">Smart IoT Mini Project</span>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-icon">🏆</span>
+                <span class="chip-label">Hackathon Project Builder</span>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-icon">💡</span>
+                <span class="chip-label">Hands-on Problem Solver</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Verified Animated Stats / Achievements -->
+          <div class="stats-card-container reveal">
+            <div class="stats-header">
+              <span class="stats-badge">Undergrad Milestones</span>
+              <span class="stats-live-dot">● 2nd Year Undergrad</span>
+            </div>
+            
+            <div class="stats-grid">
+              <div class="stat-box">
+                <div class="stat-number-wrap">
+                  <span class="stat-number" data-target="2" data-suffix="nd">0</span>
+                </div>
+                <div class="stat-label">Year of B.Tech Engineering Degree</div>
+              </div>
+
+              <div class="stat-box">
+                <div class="stat-number-wrap">
+                  <span class="stat-number" data-target="4" data-suffix="+">0</span>
+                </div>
+                <div class="stat-label">Built Projects & Hackathon Applications</div>
+              </div>
+
+              <div class="stat-box">
+                <div class="stat-number-wrap">
+                  <span class="stat-number" data-target="8" data-suffix="+">0</span>
+                </div>
+                <div class="stat-label">Core Technologies & Tools in Active Use</div>
+              </div>
+
+              <div class="stat-box">
+                <div class="stat-number-wrap">
+                  <span class="stat-number" data-target="100" data-suffix="%" data-decimals="0">0</span>
+                </div>
+                <div class="stat-label">Hands-on Curiosity & Clean Engineering</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">// 02. Skills & Tooling</span>
+          <h2 class="section-title">Current Technical Toolkit</h2>
+          <p class="section-description">
+            Technologies and tools I actively practice and use across my academic and hackathon projects.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter-tabs reveal" role="tablist" aria-label="Skills Filter">
+          <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button type="button" class="filter-tab" data-filter="languages" role="tab" aria-selected="false">Languages</button>
+          <button type="button" class="filter-tab" data-filter="web" role="tab" aria-selected="false">Web Development</button>
+          <button type="button" class="filter-tab" data-filter="database" role="tab" aria-selected="false">Database & Tools</button>
+        </div>
+
+        <div class="skills-grid stagger-group">
+          <!-- Skill Card 1: Python -->
+          <div class="skill-card stagger-item reveal" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <span class="skill-glyph">🐍</span>
+              </div>
+              <span class="skill-tier">Core Language</span>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Writing clean Python scripts, OOP principles, data manipulation, file handling, and building tools like my personal finance tracker.</p>
+            <div class="skill-tags">
+              <span>Python 3</span>
+              <span>OOP</span>
+              <span>Automation</span>
+              <span>File I/O</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: C & C++ -->
+          <div class="skill-card stagger-item reveal" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <span class="skill-glyph">⚡</span>
+              </div>
+              <span class="skill-tier">Core & DSA</span>
+            </div>
+            <h3 class="skill-name">C & C++</h3>
+            <p class="skill-desc">Solid grounding in procedural C and object-oriented C++, pointers, memory management, and data structures problem solving.</p>
+            <div class="skill-tags">
+              <span>C</span>
+              <span>C++</span>
+              <span>Data Structures</span>
+              <span>Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: HTML5 & CSS3 -->
+          <div class="skill-card stagger-item reveal" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <span class="skill-glyph">🎨</span>
+              </div>
+              <span class="skill-tier">Frontend</span>
+            </div>
+            <h3 class="skill-name">HTML5 & CSS3</h3>
+            <p class="skill-desc">Building accessible, semantic page structures, responsive layouts with Flexbox and CSS Grid, custom properties, and keyframe animations.</p>
+            <div class="skill-tags">
+              <span>Semantic HTML</span>
+              <span>Flexbox & Grid</span>
+              <span>CSS Animations</span>
+              <span>Mobile-First</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: JavaScript -->
+          <div class="skill-card stagger-item reveal" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <span class="skill-glyph">🟨</span>
+              </div>
+              <span class="skill-tier">Frontend & Logic</span>
+            </div>
+            <h3 class="skill-name">JavaScript (ES6+)</h3>
+            <p class="skill-desc">DOM manipulation, event handling, asynchronous operations (fetch, async/await), and crafting interactive web experiences.</p>
+            <div class="skill-tags">
+              <span>ES6+</span>
+              <span>DOM Manipulation</span>
+              <span>Async / Await</span>
+              <span>Event APIs</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: MongoDB -->
+          <div class="skill-card stagger-item reveal" data-category="database">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <span class="skill-glyph">🍃</span>
+              </div>
+              <span class="skill-tier">Database</span>
+            </div>
+            <h3 class="skill-name">MongoDB</h3>
+            <p class="skill-desc">NoSQL document database, managing collections, JSON-like document modeling, and performing CRUD operations for web applications.</p>
+            <div class="skill-tags">
+              <span>NoSQL</span>
+              <span>Collections</span>
+              <span>CRUD Operations</span>
+              <span>JSON Schemas</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: Git, GitHub & Deployment -->
+          <div class="skill-card stagger-item reveal" data-category="database">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">
+                <span class="skill-glyph">🚀</span>
+              </div>
+              <span class="skill-tier">Dev Tools</span>
+            </div>
+            <h3 class="skill-name">Git, GitHub & Deployment</h3>
+            <p class="skill-desc">Version control, managing branches and pull requests on GitHub, and deploying web applications to platforms like Netlify, Vercel, and Render.</p>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Vercel / Netlify</span>
+              <span>Linux Shell</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">// 03. My Projects</span>
+          <h2 class="section-title">What I've Built & Explored</h2>
+          <p class="section-description">
+            Hover or tilt each card to experience interactive 3D depth and dynamic pointer illumination.
+          </p>
+        </div>
+
+        <div class="projects-grid stagger-group">
+          <!-- Project 1: Smart Gas Leakage Detector -->
+          <article class="project-card stagger-item reveal" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="project-header">
+                <div class="project-type-badge">IoT & Hardware System</div>
+                <div class="project-status">● 2nd Year Mini Project</div>
+              </div>
+
+              <div class="project-visual-preview preview-gradient-1">
+                <div class="preview-symbol">🚨🔥</div>
+                <div class="preview-metric">Real-Time Hazard Alert</div>
+              </div>
+
+              <h3 class="project-title">Smart Gas Leakage Detector</h3>
+              
+              <p class="project-desc">
+                A 2nd-year engineering mini project developed to detect hazardous LPG/gas leaks using gas sensors and microcontrollers. Features real-time threshold monitoring, buzzer alarm trigger, and instant visual hazard alerts for domestic and lab safety.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-pill">Embedded C / C++</span>
+                <span class="tech-pill">Gas Sensors (MQ-2)</span>
+                <span class="tech-pill">Microcontroller</span>
+                <span class="tech-pill">IoT Safety</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-primary project-modal-trigger" data-project="gasleakage">
+                  <span>Interactive Preview</span>
+                  <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+                <a href="https://github.com/shashwatmisra21" target="_blank" rel="noopener noreferrer" class="btn btn-card-ghost" aria-label="View Smart Gas Leakage Detector on GitHub">
+                  <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: ScamShield India -->
+          <article class="project-card stagger-item reveal" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="project-header">
+                <div class="project-type-badge">Cyber Safety Platform</div>
+                <div class="project-status">● Hackathon Project</div>
+              </div>
+
+              <div class="project-visual-preview preview-gradient-2">
+                <div class="preview-symbol">🛡️🇮🇳</div>
+                <div class="preview-metric">Scam & Fraud Defense</div>
+              </div>
+
+              <h3 class="project-title">ScamShield India</h3>
+              
+              <p class="project-desc">
+                A hackathon-built cybersecurity and awareness web portal aimed at protecting people across India from digital frauds, fake caller scams, and phishing messages. Includes fraud number reporting and scam pattern checkers.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">HTML5 / CSS3</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Cyber Safety</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-primary project-modal-trigger" data-project="scamshield">
+                  <span>Interactive Preview</span>
+                  <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+                <a href="https://github.com/shashwatmisra21" target="_blank" rel="noopener noreferrer" class="btn btn-card-ghost" aria-label="View ScamShield India on GitHub">
+                  <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Campus Lost and Found -->
+          <article class="project-card stagger-item reveal" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="project-header">
+                <div class="project-type-badge">Campus Community Web App</div>
+                <div class="project-status">● Hackathon Project</div>
+              </div>
+
+              <div class="project-visual-preview preview-gradient-3">
+                <div class="preview-symbol">🔍🎒</div>
+                <div class="preview-metric">Campus Item Matcher</div>
+              </div>
+
+              <h3 class="project-title">Campus Lost & Found</h3>
+              
+              <p class="project-desc">
+                A community-centric web application engineered during a hackathon to solve lost belongings on college campuses. Enables students to list missing items, post found belongings with categories, and communicate safely to reclaim lost items.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">HTML5 / CSS3</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-primary project-modal-trigger" data-project="campuslostfound">
+                  <span>Interactive Preview</span>
+                  <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+                <a href="https://github.com/shashwatmisra21" target="_blank" rel="noopener noreferrer" class="btn btn-card-ghost" aria-label="View Campus Lost and Found on GitHub">
+                  <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Finance Tracker -->
+          <article class="project-card stagger-item reveal" data-tilt>
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-inner">
+              <div class="project-header">
+                <div class="project-type-badge">Python Desktop / Script</div>
+                <div class="project-status">● Complete</div>
+              </div>
+
+              <div class="project-visual-preview preview-gradient-4">
+                <div class="preview-symbol">📊💰</div>
+                <div class="preview-metric">Expense & Budget Analytics</div>
+              </div>
+
+              <h3 class="project-title">Personal Finance Tracker</h3>
+              
+              <p class="project-desc">
+                A Python application built to track daily income and expenses, calculate monthly savings, and analyze spending patterns across categories. Features clean CLI and structured storage for personal financial management.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Data Handling</span>
+                <span class="tech-pill">File I/O</span>
+                <span class="tech-pill">Financial Logic</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-card-primary project-modal-trigger" data-project="financetracker">
+                  <span>Interactive Preview</span>
+                  <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+                <a href="https://github.com/shashwatmisra21" target="_blank" rel="noopener noreferrer" class="btn btn-card-ghost" aria-label="View Personal Finance Tracker on GitHub">
+                  <svg class="btn-icon-sm" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Section -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">// 04. Command Line Interface</span>
+          <h2 class="section-title">Interactive Terminal Widget</h2>
+          <p class="section-description">
+            Type commands below or click the quick command chips to query my background, tech stack, and projects directly.
+          </p>
+        </div>
+
+        <!-- Terminal Quick Action Chips -->
+        <div class="terminal-quick-chips reveal" aria-label="Terminal Quick Commands">
+          <span class="chips-label">Quick Run:</span>
+          <button type="button" class="quick-chip" data-cmd="help">help</button>
+          <button type="button" class="quick-chip" data-cmd="about">about</button>
+          <button type="button" class="quick-chip" data-cmd="skills">skills</button>
+          <button type="button" class="quick-chip" data-cmd="projects">projects</button>
+          <button type="button" class="quick-chip" data-cmd="contact">contact</button>
+          <button type="button" class="quick-chip" data-cmd="clear">clear</button>
+        </div>
+
+        <!-- The Terminal Window -->
+        <div class="terminal-window reveal" id="terminal-window" tabindex="0" role="region" aria-label="Interactive Developer Terminal">
+          <!-- Terminal Titlebar -->
+          <div class="terminal-titlebar">
+            <div class="terminal-controls" aria-hidden="true">
+              <span class="control-dot dot-close"></span>
+              <span class="control-dot dot-minimize"></span>
+              <span class="control-dot dot-expand"></span>
+            </div>
+            <div class="terminal-title">
+              <span class="terminal-title-user">shashwat@misra-dev</span>:<span class="terminal-title-path">~</span> (zsh)
+            </div>
+            <div class="terminal-session-status">
+              <span class="status-dot"></span> 2nd Year B.Tech
+            </div>
+          </div>
+
+          <!-- Terminal Output Log -->
+          <div class="terminal-body" id="terminal-output" aria-live="polite">
+            <div class="term-line term-banner">
+  _____ _               _                 _ 
+ / ____| |             | |               | |
+| (___ | |__   __ _ ___| |____      ____ _| |_
+ \___ \| '_ \ / _` / __| '_ \ \ /\ / / _` | __|
+ ____) | | | | (_| \__ \ | | \ V  V / (_| | |_ 
+|_____/|_| |_|\__,_|___/_| |_|\_/\_/ \__,_|\__|
+            </div>
+            <div class="term-line term-dim">Welcome to Shashwat Misra's interactive terminal.</div>
+            <div class="term-line">Type <span class="term-cmd-highlight">help</span> to view available commands, or click any chip above.</div>
+            <div class="term-line term-dim">Supported commands: help, about, skills, projects, clear, contact, theme, date, whoami</div>
+          </div>
+
+          <!-- Terminal Input Row -->
+          <div class="terminal-input-row">
+            <span class="term-prompt">
+              <span class="term-prompt-arrow">➜</span>
+              <span class="term-prompt-tilde">~</span>
+            </span>
+            <input 
+              type="text" 
+              id="terminal-input" 
+              class="terminal-input" 
+              autocomplete="off" 
+              autocapitalize="off" 
+              spellcheck="false" 
+              placeholder="type a command... (e.g. 'help')"
+              aria-label="Terminal command input"
+            />
+            <button type="button" class="term-run-btn" id="terminal-run-btn" aria-label="Execute command">
+              Run
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Timeline Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">// 05. Academic Journey</span>
+          <h2 class="section-title">My Learning Path & Milestones</h2>
+        </div>
+
+        <div class="timeline stagger-group">
+          <!-- Timeline Item 1: 2nd Year -->
+          <div class="timeline-item stagger-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2026 — Present (2nd Year)</div>
+              <h3 class="timeline-role">2nd Year B.Tech Undergrad & Builder</h3>
+              <div class="timeline-company">Computer Science & Engineering • Target: 2027 Internships</div>
+              <p class="timeline-desc">
+                Diving deeper into Data Structures & Algorithms, Object-Oriented Programming with C++, web development with JavaScript & MongoDB, and developing the <strong>Smart Gas Leakage Detector</strong> mini project. Active hackathon participant.
+              </p>
+              <div class="timeline-tags">
+                <span>C++ OOP</span>
+                <span>Data Structures</span>
+                <span>IoT Mini Project</span>
+                <span>MongoDB & Web</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Hackathons -->
+          <div class="timeline-item stagger-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2026</div>
+              <h3 class="timeline-role">Hackathon Team Builder</h3>
+              <div class="timeline-company">Collegiate Hackathons & Innovation Challenges</div>
+              <p class="timeline-desc">
+                Collaborated with peers to conceptualize and ship <strong>ScamShield India</strong> (digital fraud prevention portal) and <strong>Campus Lost & Found</strong> (community item recovery platform) under hackathon timeframes.
+              </p>
+              <div class="timeline-tags">
+                <span>Team Collaboration</span>
+                <span>Rapid Prototyping</span>
+                <span>Python & JS</span>
+                <span>Product Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 1st Year -->
+          <div class="timeline-item stagger-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2025 — 2026 (1st Year)</div>
+              <h3 class="timeline-role">Engineering Foundations (Scored 9.0 CGPA)</h3>
+              <div class="timeline-company">B.Tech First Year Coursework</div>
+              <p class="timeline-desc">
+                Built solid programming logic in C and Python. Scored a <strong>9.0 CGPA</strong> across first-year engineering academics. Explored HTML & CSS, terminal scripting, Git version control, and created a Python personal finance tracker.
+              </p>
+              <div class="timeline-tags">
+                <span>9.0 CGPA</span>
+                <span>C Programming</span>
+                <span>Python Basics</span>
+                <span>HTML & CSS</span>
+                <span>Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">// 06. Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <p class="section-description">
+            I am actively open to internship opportunities, student developer programs, hackathon teams, and mentorship. Feel free to reach out directly!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column reveal">
+            <div class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Direct Email</span>
+                <a href="mailto:shashwatmisra11@gmail.com" class="contact-card-link">shashwatmisra11@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">📱</div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Phone</span>
+                <a href="tel:+919794119772" class="contact-card-link">+91 9794119772</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">💼</div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Current Status</span>
+                <span class="contact-card-value">2nd Year B.Tech • Open to 2027 Internships</span>
+              </div>
+            </div>
+
+            <!-- Social Links Row -->
+            <div class="contact-socials">
+              <a href="https://github.com/shashwatmisra21" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/shashwat-misra-89a4a5380/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="mailto:shashwatmisra11@gmail.com" class="social-btn" aria-label="Send direct email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-wrapper reveal">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Name <span class="required">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" required />
+                  <span class="field-error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email <span class="required">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="your.email@example.com" required />
+                  <span class="field-error" id="email-error" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="2027 Internship / Project collaboration / Hello" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" class="form-input form-textarea" rows="5" placeholder="Let's connect! Share your message or internship requirements..." required></textarea>
+                <span class="field-error" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <svg class="btn-spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+                  <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
+                </svg>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Preview Modal -->
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-tags" id="modal-tags">
+          <span class="tech-pill">Preview</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close project preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+        <p class="modal-description" id="modal-desc">Project comprehensive breakdown and architectural highlights.</p>
+        <div class="modal-interactive-sandbox" id="modal-sandbox">
+          <!-- Dynamic sandbox content injected via JS -->
+        </div>
+        <div class="modal-footer">
+          <div class="modal-footer-info" id="modal-meta">B.Tech Mini / Hackathon Project</div>
+          <button type="button" class="btn btn-secondary modal-close-action" id="modal-close-action">Close Window</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Back to Top Button with SVG Circular Scroll Progress -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+    <svg class="progress-ring" viewBox="0 0 44 44" aria-hidden="true">
+      <circle class="progress-ring-bg" cx="22" cy="22" r="18" />
+      <circle class="progress-ring-indicator" id="scroll-progress-indicator" cx="22" cy="22" r="18" />
+    </svg>
+    <svg class="arrow-up-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="brand-bracket">&lt;</span>Shashwat Misra<span class="brand-code">.dev</span><span class="brand-bracket"> /&gt;</span>
+        </div>
+        <p class="footer-tagline">2nd Year B.Tech Student • Built with modern HTML5, CSS3, & Vanilla JavaScript.</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-badge">
+          <span class="badge-dot-green"></span>
+          <span>Open to Summer 2027 Internships</span>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">&copy; 2026 Shashwat Misra. Built with honest craftsmanship.</p>
+        <a href="#hero" class="footer-top-link">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
