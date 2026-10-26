@@ -1324,16 +1324,29 @@
 
       if (!isValid) return;
 
-      // Simulate network request
+      // Submit to Netlify Forms via fetch
       submitBtn.classList.add('is-loading');
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        submitBtn.classList.remove('is-loading');
-        submitBtn.disabled = false;
-        form.reset();
-        showToast('Message transmitted successfully! Shashwat will respond soon.', 'success');
-      }, 900);
+      const formData = new FormData(form);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => {
+          submitBtn.classList.remove('is-loading');
+          submitBtn.disabled = false;
+          form.reset();
+          showToast('Message sent! Shashwat will get back to you soon. 🚀', 'success');
+        })
+        .catch((err) => {
+          console.error('Form submission error:', err);
+          submitBtn.classList.remove('is-loading');
+          submitBtn.disabled = false;
+          showToast('Oops! Something went wrong. Try emailing directly at shashwatmisra11@gmail.com', 'error');
+        });
     });
   };
 
